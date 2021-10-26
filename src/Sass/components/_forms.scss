@@ -1,0 +1,105 @@
+@import "../utilities/functions";
+
+.container {
+    max-width: 42rem;
+    margin: 2.5rem auto;
+}
+
+label {
+    color: get_form_color(text_color);
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+input[type="text"], .submit{
+    width: 100%;
+    padding: 0.8rem 1.5rem;
+    margin: 1rem 0;
+    display: block;
+    border: 1px solid get_form_color(secondary);
+    border-radius: 0.4rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
+.validation {
+    border: 1px solid;
+	margin: 10px auto;
+	padding: 15px 10px 15px 50px;
+	background-repeat: no-repeat;
+	background-position: 10px center;
+	max-width: 460px;
+    color: #D63301;
+	background-color: #FFCCBA;
+	background-image: url('https://i.imgur.com/GnyDvKN.png');
+}
+
+.btn-primary {
+    font-size: 1rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+    color: get_form_color(secondary_very_light);
+    background-color: get_form_color(primary);
+    transition: all .2s ease-in-out;
+}
+
+.btn-primary:hover {
+    background-color: get_form_color(primary_hover);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    .container {
+        padding-inline: 1.1rem;
+    }
+
+    label {
+        font-size: 0.9rem;
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .container {
+        padding-inline: 1.3rem;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    label{
+        font-size: 1.2rem;
+    }
+
+    input[type="text"], input-group, .submit{
+        padding: 1.2rem 1.5rem;
+        margin: 1.1rem 0;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    label {
+        font-size: 1.3rem;
+    }
+
+    input[type="text"],input-group, .submit{
+        padding: 1.3rem 1.5rem;
+        margin: 1.1rem 0;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    label{
+        font-size: 1.4rem;
+    }
+
+    input[type="text"],input-group, .submit{
+        padding: 1.4rem 1.5rem;
+        margin: 1.1rem 0;
+    }
+}

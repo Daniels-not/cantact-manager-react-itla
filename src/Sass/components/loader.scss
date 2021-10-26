@@ -1,0 +1,48 @@
+@import "../utilities/variables";
+
+.loader__container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $one;
+}
+.loader{
+
+    height: 50px;
+    width: 50px;
+    position: relative;
+    &::after,
+    &::before{
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        border: solid 8px transparent;
+        border-radius: 50%;
+        animation: wiggle 1.4s ease infinite;
+    }
+    &::before{
+        border-top-color: $two;
+        border-bottom-color: $four;
+    }
+    &::after{
+        border-left-color: $three;
+        border-right-color: $five;
+        animation-delay: .7s;
+    }
+}
+
+@keyframes wiggle{
+    0%{
+        transform: rotate(0deg) scale(1);
+    }
+    50%{
+        transform: rotate(180deg) scale(.5);
+    }
+    100%{
+
+        transform: rotate(360deg) scale(1);
+    }
+}

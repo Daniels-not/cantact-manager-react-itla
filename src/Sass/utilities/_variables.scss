@@ -1,0 +1,32 @@
+$x_padding: 1rem;
+$x_padding-responsive: 1rem;
+$x_margin: 1.5rem;
+$y_margin: 1rem;
+
+/*Loader colors*/
+$one: #f5f5f5;
+$two: #4285f4;
+$three: #fbbc05;
+$four: #34a853;
+$five: #ea4335;
+
+$form_color: (
+    "primary": hsl(217, 66%, 12%),
+    "secondary": hsl(0, 0%, 53%),
+    "secondary_very_light": hsl(0, 0%, 95%),
+    "text_color": hsl(0, 0%, 20%),
+
+    "primary_hover": hsl(217, 63%, 15%),
+    "box_shadow": rgba(0, 0, 0, 0.06),
+
+    "error_text": hsl(0, 100%, 50%)
+);
+
+$card_colors: (
+    "bg_color": #E4FBFF,
+    "bg_color-light": hsl(214, 100%, 97%),
+    "text_color": hsl(0, 0%, 20%),
+    "text_color_hover": hsl(180, 6%, 32%),
+    "box_shadow_color": rgba(220, 233, 255, 0.48)
+)
+

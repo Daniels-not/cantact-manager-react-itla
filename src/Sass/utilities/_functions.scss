@@ -1,0 +1,9 @@
+@import "../utilities/variables";
+
+@function get_form_color($color){
+    @return map-get($form_color, $color);
+}
+
+@function get_card_color($color){
+    @return map-get($card_colors, $color);
+}

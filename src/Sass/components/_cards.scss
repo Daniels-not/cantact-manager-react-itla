@@ -1,0 +1,94 @@
+@import "../utilities/functions";
+@import "../utilities/variables";
+
+.card__container {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding-left: $x_padding;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    display: flex;
+    height: 6.25rem;
+    width: 25rem;
+    margin-inline: $x_margin;
+    margin-block: $y_margin;
+    border-radius: 3.125rem;
+    background-color: get_card_color(bg_color);
+    cursor: pointer;
+    transition: transform .4s;
+
+}
+
+.avatar {
+    background-image: url("../img/profile.png");
+    background-position: center;
+    background-size: 5rem;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    position: relative;
+    top: 0.6rem;
+    left: 0.6rem;
+    box-shadow: 0 0 4rem rgba(0, 0, 0, 0.25);
+}
+
+.content {
+    padding: 1rem;
+    margin: 1rem;
+    color: get_card_color(text_color);
+}
+
+.text-content {
+    text-overflow:ellipsis;
+    overflow:hidden;
+    display: -webkit-box !important;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+}
+
+@media only screen and (max-width: 300px) {
+
+    .card__container {
+        padding-inline: 0.3rem;
+
+            .avatar {
+                display: none;
+            }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    /* .card__container .avatar {
+        display: none;
+    } */
+
+    .text-content {
+        -webkit-line-clamp: 0.5;
+    }
+
+    .card__container {
+        padding-inline: $x_padding-responsive;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card__container {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card__container {
+        justify-content: center;
+        align-items: center;
+    }
+}
