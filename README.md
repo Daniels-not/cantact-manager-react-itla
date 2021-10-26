@@ -1,4 +1,4 @@
-# Contact Manager v0.0.1 🔥
+# Contact Manager v0.0.2 🔥
 ![](https://github.com/Daniels-not/cantact-manager-react-itla/blob/main/preview.PNG)
 
 ## Instructions 📑
